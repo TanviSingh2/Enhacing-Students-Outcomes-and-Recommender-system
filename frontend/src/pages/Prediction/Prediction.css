@@ -1,0 +1,61 @@
+.prediction-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.prediction-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.prediction-form-section,
+.prediction-result-section {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.section-header {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.result-loading,
+.result-error,
+.result-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.result-error {
+  color: var(--error-color);
+}
+
+.error-icon,
+.placeholder-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.result-placeholder p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .prediction-container {
+    grid-template-columns: 1fr;
+  }
+}
+
